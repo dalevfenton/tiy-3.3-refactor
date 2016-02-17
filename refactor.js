@@ -43,14 +43,19 @@ var doSomethingCool = function(){ console.log("Something Cool!"); };
 // after 2 seconds. Refactor to use an anonymous
 // function
 
-function sayHi() {
-  alert("Hello, World!");
-}
 
-setTimeout(sayHi, 2000);
+//original function
+// function sayHi() {
+//   alert("Hello, World!");
+// }
+//
+// setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
 
+setTimeout( function(){
+  alert("Hello, World");
+}, 2000);
 
 // -----------------------------------------------
 
