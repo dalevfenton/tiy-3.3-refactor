@@ -332,12 +332,18 @@ var accelerate = function(amount) {
 //       ...
 //     });
 
-var callLater = function(timeout, callback) {
-  setTimeout(callback, timeout);
-};
+
 
 // Put your answer below -------------------------
 
+var callLater = function(timeout, callback) {
+  defaultTimeout = 1000;
+  if(typeof timeout === 'number'){
+    setTimeout(callback, timeout);
+  }else{
+    setTimeout(timeout, defaultTimeout);
+  }
+};
 
 // -----------------------------------------------
 
