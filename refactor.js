@@ -128,23 +128,24 @@ var reverseStr = function(str){ return str.split("").reverse().join(""); };
 // Refactor this function to use an object
 // instead of an if/else statement.
 
-var spanishColor = function(colorName) {
-  if (colorName.toLowerCase() === "rojo") {
-    return "#ff0000";
-  }
-  else if (colorName.toLowerCase() === "blanco") {
-    return "#ffffff";
-  }
-  else if (colorName.toLowerCase() === "azul") {
-    return "#0000ff";
-  }
-  else if (colorName.toLowerCase() === "verde") {
-    return "#00ff00";
-  }
-  else if (colorName.toLowerCase() === "negro") {
-    return "#000000";
-  }
-};
+//original function
+// var spanishColor = function(colorName) {
+//   if (colorName.toLowerCase() === "rojo") {
+//     return "#ff0000";
+//   }
+//   else if (colorName.toLowerCase() === "blanco") {
+//     return "#ffffff";
+//   }
+//   else if (colorName.toLowerCase() === "azul") {
+//     return "#0000ff";
+//   }
+//   else if (colorName.toLowerCase() === "verde") {
+//     return "#00ff00";
+//   }
+//   else if (colorName.toLowerCase() === "negro") {
+//     return "#000000";
+//   }
+// };
 
 // Put your answer below -------------------------
 
@@ -168,10 +169,13 @@ var spanishColor = {
 // Break it up so that the declaration and
 // assignment are happening on 2 seperate lines.
 
-var foo = "bar";
+// original code
+// var foo = "bar";
 
 // Put your answer below -------------------------
 
+var foo;
+foo = "bar";
 
 // -----------------------------------------------
 
