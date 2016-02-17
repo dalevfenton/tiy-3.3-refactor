@@ -102,16 +102,18 @@ console.log("The letter is", letter);
 // of the function is 5 lines of code. Refactor
 // this function to do the same thing with 1 line
 
-var reverseStr = function(str) {
-  var arr;
-  arr = str.split("");
-  arr = arr.reverse();
-  str = arr.join("");
-  return str;
-};
+//original function
+// var reverseStr = function(str) {
+//   var arr;
+//   arr = str.split("");
+//   arr = arr.reverse();
+//   str = arr.join("");
+//   return str;
+// };
 
 // Put your answer below -------------------------
 
+var reverseStr = function(str){ return str.split("").reverse().join(""); };
 
 // -----------------------------------------------
 
