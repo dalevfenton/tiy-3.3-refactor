@@ -273,15 +273,28 @@ var addNumbers = function(numberA, numberB) {
 // setting speed to NaN when no parameter is given
 // Then refactor the function to have a default
 // amount of 1 if no param is given.
-
-var speed = 0;
-
-var accelerate = function(amount) {
-  speed += amount;
-};
+//original function
+// var speed = 0;
+//
+// var accelerate = function(amount) {
+//   speed += amount;
+// };
 
 // Put your answer below -------------------------
 
+//--------------EXPLANATION-------------------------
+//if we called without passing an amount javascript
+//can't increment speed and throws NaN at us because
+// it's not a number
+var speed = 0;
+
+var accelerate = function(amount) {
+  if(amount){
+    speed += amount;
+  }else{
+    speed += 1;
+  }
+};
 
 // -----------------------------------------------
 
