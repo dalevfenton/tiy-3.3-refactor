@@ -156,7 +156,9 @@ var spanishColor = {
   verde: "#00ff00",
   negro: "#000000"
 };
-
+function spanishColor( color ){
+  return spanishColor[color.toLowerCase()];
+}
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -340,7 +342,7 @@ var callLater = function(timeout, callback) {
   defaultTimeout = 1000;
   if(typeof timeout === 'number'){
     setTimeout(callback, timeout);
-  }else{
+  }else if(typeof timeout === 'function'){
     setTimeout(timeout, defaultTimeout);
   }
 };
