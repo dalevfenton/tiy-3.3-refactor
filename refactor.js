@@ -246,15 +246,17 @@ var callNtimes = function(callback, numTimes){
 // twoPlusTwo gets set to `undefined`. Refactor
 // the function to make it work.
 
-var addNumbers = function(numberA, numberB) {
-  console.log(numberA + numberB);
-};
-
-var twoPlusTwo = addNumbers(2,2);
+// original function
+// var addNumbers = function(numberA, numberB) {
+//   console.log(numberA + numberB);
+// };
+//
+// var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
-
-
+var addNumbers = function(numberA, numberB) {
+  return numberA + numberB;
+};
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
