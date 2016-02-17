@@ -85,8 +85,12 @@ letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
-
-
+// answer is [c]: z then y
+// letter gets set to x
+// setTimeout has to wait the initial tick of 1 milisecond to run so nothing happens
+// letter gets reset to z
+// letter gets output to console as z !!! first output
+// setTimeout runs, anoynmous function sets letter to y and logs it !!! second output
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
