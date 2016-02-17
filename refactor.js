@@ -23,12 +23,14 @@
 // to a variable containing an anonymous
 // function
 
-function doSomethingCool() {
-  console.log("Something Cool!");
-}
+//original function
+// function doSomethingCool() {
+//   console.log("Something Cool!");
+// }
 
 // Put your answer below -------------------------
 
+var doSomethingCool = function(){ console.log("Something Cool!"); };
 
 // -----------------------------------------------
 
